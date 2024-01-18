@@ -68,7 +68,7 @@ function calculateCGPA() {
         let cgpa = sumGpaCreditHours / totalCreditHours;
 
         // Display the result
-        document.getElementById('result').innerText = `Your CGPA is: ${cgpa.toFixed(2)}`;
+        document.getElementById('result').innerText = `Your SGPA is: ${cgpa.toFixed(2)}`;
     } else {
         // Display an error message if there are no valid inputs
         document.getElementById('result').innerText = `Please enter valid GPA and Credit Hours values.`;
