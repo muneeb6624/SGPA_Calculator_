@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>SGPA Calculator-UET Mardan</title>
+    <link rel="icon" href="/uet logo.jpg">
+</head>
+
+<body>
+    <div class="container-fluid" style="background-color: rgb(149, 149, 228);">
+
+        <div
+            style="background-color: rgb(92, 161, 201); color: whitesmoke; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            <h1 class="justify-content-center mainheading d-flex mb-5">CGPA CALCULATOR FOR UET MARDAN</h1>
+        </div>
+
+        <div>
+            <h6>Please Enter the Number of Subjects (including labs):</h6>
+            <div class="row d-flex justify-content-center">
+                <div class="col">
+                    <input class="form-control mb-3" id="numberOfSubjects" type="number"
+                        placeholder="Enter number of subjects">
+
+                </div>
+
+                <div class="col">
+                    <button class="btn btn-primary" onclick="generateRows()"> Click here to get started </button>
+
+                </div>
+            </div>
+
+            <h6>Please Enter your Subject GPA and credit hours:</h6>
+            <div class="container mt-4" style="width: 70%;" id="inputRows">
+                <!-- Rows will be dynamically generated here -->
+            </div>
+
+            <div class="justify-content-center d-flex">
+                <button class="btn btn-success mt-4 mb-4" onclick="calculateCGPA()">Calculate CGPA</button>
+
+            </div>
+
+            <div class="justify-content-center d-flex">
+
+                <h4 style="border-width: 2pt; 
+            border-color: rgb(116, 104, 104); 
+            border-radius: 15px; 
+            background-color: rgb(217, 246, 247);
+            color: rgb(255, 127, 127);
+            max-width: fit-content;
+            " id="result"></h4>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+<footer>
+    <p class="d-flex justify-content-center"> Copyright Muneeb 2024. All rights reserved </p>
+</footer>
+
+</html>
